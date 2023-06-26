@@ -1,7 +1,12 @@
 const html = require("html-template-tag");
 
 const postDetails = (post) => {
-    const doc = html`
+    const doc = html`<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Wizard News</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
     <div class="news-list">
       <header><img src="/logo.png"/>Wizard News</header> 
@@ -15,7 +20,9 @@ const postDetails = (post) => {
             ${post.upvotes} upvotes | ${post.date}
           </small>
         </div>  
-    </div>`;
+    </div>
+  </body>
+  </html>`;
     if (!post.id) {
       throw new Error("not found");
     } else {
