@@ -1,7 +1,7 @@
 const html = require("html-template-tag");
 
 const postDetails = (post) => {
-    const doc = `<!DOCTYPE html>
+    const doc = html`<!DOCTYPE html>
   <html>
   <head>
     <title>Wizard News</title>
