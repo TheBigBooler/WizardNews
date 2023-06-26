@@ -1,12 +1,7 @@
 const html = require("html-template-tag");
 
 const postList = (posts) => {
-  const doc = `<!DOCTYPE html>
-  <html>
-  <head>
-    <title>Wizard News</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+  const doc = `
   <body>
     <div class="news-list">
       <header><img src="/logo.png"/>Wizard News</header>
@@ -25,9 +20,7 @@ const postList = (posts) => {
         </div>`
       )
         .join("")}
-    </div>
-  </body>
-  </html>`;
+    </div>`;
 
   return doc;
 };
